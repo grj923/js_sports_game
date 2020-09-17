@@ -7,6 +7,9 @@ shootoneButton.addEventListener("click", function () {
   console.log("Team One Shot");
   let newScoreOne = Number(teamonenumshots.innerHTML) + 1;
   teamonenumshots.innerHTML = newScoreOne;
+  if (Math.floor(Math.random() * 2) === 1) {
+    teamonenumgoals.innerHTML + 1;
+  }
 });
 
 shoottwoButton.addEventListener("click", function () {
@@ -17,4 +20,8 @@ shoottwoButton.addEventListener("click", function () {
 
 resetButton.addEventListener("click", function () {
   console.log("Reset Game");
+  teamonenumshots.innerHTML = 0;
+  teamtwonumshots.innerHTML = 0;
+  let resetTotal = Number(numresets.innerHTML) + 1;
+  numresets.innerHTML = resetTotal;
 });
