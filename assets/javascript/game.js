@@ -25,11 +25,17 @@ shoottwoButton.addEventListener("click", function () {
 
 resetButton.addEventListener("click", function () {
   console.log("Reset Game");
+  let RedTeam = Number(TeamOneWins.innerHTML);
+  let BlueTeam = Number(TeamTwoWins.innerHTML);
+
   if (teamonenumgoals.innerHTML > TeamTwoGoals.innerHTML) {
     console.log("Team One Wins");
+    TeamOneWins.innerHTML = RedTeam + 1;
   }
+
   if (TeamTwoGoals.innerHTML > teamonenumgoals.innerHTML) {
     console.log("Team Two Wins");
+    TeamTwoWins.innerHTML = BlueTeam + 1;
   }
 
   teamonenumshots.innerHTML = 0;
