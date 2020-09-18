@@ -31,11 +31,13 @@ resetButton.addEventListener("click", function () {
   if (teamonenumgoals.innerHTML > TeamTwoGoals.innerHTML) {
     console.log("Team One Wins");
     TeamOneWins.innerHTML = RedTeam + 1;
+    confirm("Red Team Kicked Ass!");
   }
 
   if (TeamTwoGoals.innerHTML > teamonenumgoals.innerHTML) {
     console.log("Team Two Wins");
     TeamTwoWins.innerHTML = BlueTeam + 1;
+    confirm("Blue Team Kicked Ass!");
   }
 
   teamonenumshots.innerHTML = 0;
