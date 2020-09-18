@@ -7,21 +7,28 @@ shootoneButton.addEventListener("click", function () {
   console.log("Team One Shot");
   let newScoreOne = Number(teamonenumshots.innerHTML) + 1;
   teamonenumshots.innerHTML = newScoreOne;
-  if (Math.floor(Math.random() * 2) === 1) {
-    teamonenumgoals.innerHTML + 1;
-  }
+  Goalsmade = Number(teamonenumgoals.innerHTML);
+  let randomShot = Math.floor(Math.random() * 2);
+  console.log(randomShot);
+  teamonenumgoals.innerHTML = Goalsmade + randomShot;
 });
 
 shoottwoButton.addEventListener("click", function () {
   console.log("Team Two Shot");
   let newScoreTwo = Number(teamtwonumshots.innerHTML) + 1;
   teamtwonumshots.innerHTML = newScoreTwo;
+  GoalsmadeTwo = Number(TeamTwoGoals.innerHTML);
+  let randomShotTwo = Math.floor(Math.random() * 2);
+  console.log(randomShotTwo);
+  TeamTwoGoals.innerHTML = GoalsmadeTwo + randomShotTwo;
 });
 
 resetButton.addEventListener("click", function () {
   console.log("Reset Game");
   teamonenumshots.innerHTML = 0;
   teamtwonumshots.innerHTML = 0;
+  TeamTwoGoals.innerHTML = 0;
+  teamonenumgoals.innerHTML = 0;
   let resetTotal = Number(numresets.innerHTML) + 1;
   numresets.innerHTML = resetTotal;
 });
