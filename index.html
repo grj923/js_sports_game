@@ -6,8 +6,8 @@
   </head>
   <body>
     <div>
-      <h1>My JS Game</h1>
-      <div id="reset-container">
+       <div id="reset-container">
+        <h1>My JS Game</h1>
         <button id="reset-button">RESET</button><br />
         NUMBER OF RESETS: <span id="numresets">0</span>
       </div>
@@ -19,7 +19,9 @@
           GOALS: <span id="teamonenumgoals">0</span>
         </div>
         <div>
-          <button id="teamone-shoot-button">SHOOT</button>
+          <button id="teamone-shoot-button">SHOOT</button><br>
+          <H2>Wins</H2>
+          <div class = "TeamOneWins">0</div>
         </div>
       </div>
       <div class="right">
@@ -30,11 +32,13 @@
         </div>
         <div>
           <button id="teamtwo-shoot-button">SHOOT</button>
+          <H2>Wins</H2>
+          <div class = "TeamTwoWins">0</div>
         </div>
       </div>
       <div class="clear"></div>
     </div>
-  </body>
+        </body>
   <script src="./assets/javascript/game.js"></script>
 </body>
 </html>

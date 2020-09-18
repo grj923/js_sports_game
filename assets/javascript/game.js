@@ -25,6 +25,13 @@ shoottwoButton.addEventListener("click", function () {
 
 resetButton.addEventListener("click", function () {
   console.log("Reset Game");
+  if (teamonenumgoals.innerHTML > TeamTwoGoals.innerHTML) {
+    console.log("Team One Wins");
+  }
+  if (TeamTwoGoals.innerHTML > teamonenumgoals.innerHTML) {
+    console.log("Team Two Wins");
+  }
+
   teamonenumshots.innerHTML = 0;
   teamtwonumshots.innerHTML = 0;
   TeamTwoGoals.innerHTML = 0;

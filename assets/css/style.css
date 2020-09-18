@@ -1,16 +1,78 @@
+body {
+  background: beige;
+  /* display: flexbox; */
+}
+
 .hide {
   display: none;
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
+
 .clear {
+  /* display: flexbox */
+  background: bisque;
+  /* flex-direction: column; */
   clear: both;
 }
+.left {
+  float: left;
+  width: 520px;
+  height: 400px;
+  background: red;
+  /* align-items: center; */
+  border: 1px solid black;
+}
+
+.right {
+  float: right;
+  width: 520px;
+  height: 400px;
+  background: blue;
+  border: 1px solid black;
+}
+
 #reset-container,
 h1 {
+  background: rgb(134, 172, 172);
+  text-align: center;
+}
+#reset-container {
+  background: rgb(134, 172, 172);
+  border: 1px solid black;
+}
+h2 {
+  text-align: center;
+}
+
+.goals {
+  width: 150px;
+  background: azure;
+  position: relative;
+  left: 190px;
+  text-align: center;
+}
+#teamone-shoot-button {
+  position: relative;
+  left: 230px;
+  margin-top: 5px;
+}
+#teamtwo-shoot-button {
+  position: relative;
+  left: 230px;
+  margin-top: 5px;
+}
+.TeamOneWins {
+  position: relative;
+  background: azure;
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  text-align: center;
+}
+.TeamTwoWins {
+  position: relative;
+  background: azure;
+  width: 20px;
+  height: 20px;
+  left: 250px;
   text-align: center;
 }
