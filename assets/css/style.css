@@ -43,6 +43,8 @@ h1 {
 }
 h2 {
   text-align: center;
+  text-shadow: 2px 2px white;
+  /* text-transform: capitalize; */
   /* background: white; */
   /* width: 40px; */
 }
